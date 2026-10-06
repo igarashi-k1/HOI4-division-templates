@@ -1,0 +1,8 @@
+division_templates_category = {
+	icon = generic_army_support
+	priority = 100
+
+	allowed = {
+		always = yes
+	}
+}

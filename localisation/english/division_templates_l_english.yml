@@ -1,0 +1,11 @@
+﻿l_english:
+ division_templates_category:0 "師団編成"
+ division_templates_category_desc:0 "新しい師団テンプレートの追加と、その師団の配置を行います。"
+ add_template_infantry_12:0 "歩兵師団テンプレートを追加"
+ add_template_infantry_12_desc:0 "歩兵大隊12（4列×3）と支援中隊（砲兵・工兵・騎兵偵察）の師団テンプレート「Infantry Division 12」を追加します。"
+ add_template_cavalry_12:0 "騎兵師団テンプレートを追加"
+ add_template_cavalry_12_desc:0 "騎兵大隊12（4列×3）と支援中隊（砲兵・工兵・騎兵偵察）の師団テンプレート「Cavalry Division 12」を追加します。"
+ deploy_infantry_12:0 "歩兵師団を配置"
+ deploy_infantry_12_desc:0 "「Infantry Division 12」の師団を首都に10個配置します。"
+ deploy_cavalry_12:0 "騎兵師団を配置"
+ deploy_cavalry_12_desc:0 "「Cavalry Division 12」の師団を首都に10個配置します。"

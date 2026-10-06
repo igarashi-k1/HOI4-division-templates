@@ -1,0 +1,135 @@
+division_templates_category = {
+
+	# 師団テンプレート「Infantry Division 12」を追加（歩兵大隊 4列×3 + 支援中隊：砲兵・工兵・騎兵偵察）
+	add_template_infantry_12 = {
+		icon = generic_army_support
+		cost = 0
+		fire_only_once = no
+
+		available = {
+			NOT = { has_template = "Infantry Division 12" }
+		}
+
+		complete_effect = {
+			division_template = {
+				name = "Infantry Division 12"
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }
+					infantry = { x = 2 y = 2 }
+					infantry = { x = 3 y = 0 }
+					infantry = { x = 3 y = 1 }
+					infantry = { x = 3 y = 2 }
+				}
+				support = {
+					artillery = { x = 0 y = 0 }
+					engineer = { x = 0 y = 1 }
+					recon = { x = 0 y = 2 }
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	# 師団テンプレート「Cavalry Division 12」を追加（騎兵大隊 4列×3 + 支援中隊：砲兵・工兵・騎兵偵察）
+	add_template_cavalry_12 = {
+		icon = generic_army_support
+		cost = 0
+		fire_only_once = no
+
+		available = {
+			NOT = { has_template = "Cavalry Division 12" }
+		}
+
+		complete_effect = {
+			division_template = {
+				name = "Cavalry Division 12"
+				regiments = {
+					cavalry = { x = 0 y = 0 }
+					cavalry = { x = 0 y = 1 }
+					cavalry = { x = 0 y = 2 }
+					cavalry = { x = 1 y = 0 }
+					cavalry = { x = 1 y = 1 }
+					cavalry = { x = 1 y = 2 }
+					cavalry = { x = 2 y = 0 }
+					cavalry = { x = 2 y = 1 }
+					cavalry = { x = 2 y = 2 }
+					cavalry = { x = 3 y = 0 }
+					cavalry = { x = 3 y = 1 }
+					cavalry = { x = 3 y = 2 }
+				}
+				support = {
+					artillery = { x = 0 y = 0 }
+					engineer = { x = 0 y = 1 }
+					recon = { x = 0 y = 2 }
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	# 師団テンプレート「Infantry Division 12」の師団を首都に10個配置
+	deploy_infantry_12 = {
+		icon = generic_army_support
+		cost = 0
+		fire_only_once = no
+
+		available = {
+			has_template = "Infantry Division 12"
+			capital_scope = { is_controlled_by = ROOT }
+		}
+
+		complete_effect = {
+			capital_scope = {
+				create_unit = {
+					division = "division_template = \"Infantry Division 12\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+					owner = ROOT
+					count = 10
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	# 師団テンプレート「Cavalry Division 12」の師団を首都に10個配置
+	deploy_cavalry_12 = {
+		icon = generic_army_support
+		cost = 0
+		fire_only_once = no
+
+		available = {
+			has_template = "Cavalry Division 12"
+			capital_scope = { is_controlled_by = ROOT }
+		}
+
+		complete_effect = {
+			capital_scope = {
+				create_unit = {
+					division = "division_template = \"Cavalry Division 12\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+					owner = ROOT
+					count = 10
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+}
