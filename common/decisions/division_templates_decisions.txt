@@ -11,13 +11,15 @@ division_templates_category = {
 		}
 
 		complete_effect = {
-			# 初期野戦砲・支援装備・工兵・騎兵偵察の技術を習得
+			# 初期野戦砲・支援装備・工兵・騎兵偵察・初期トラック・軍用トラックの技術を習得
 			set_technology = {
 				popup = no
 				gw_artillery = 1
 				tech_support = 1
 				tech_engineers = 1
 				tech_recon = 1
+				tech_trucks = 1
+				motorised_infantry = 1
 			}
 			division_template = {
 				name = "Infantry Division 12"
@@ -59,13 +61,15 @@ division_templates_category = {
 		}
 
 		complete_effect = {
-			# 初期野戦砲・支援装備・工兵・騎兵偵察の技術を習得
+			# 初期野戦砲・支援装備・工兵・騎兵偵察・初期トラック・軍用トラックの技術を習得
 			set_technology = {
 				popup = no
 				gw_artillery = 1
 				tech_support = 1
 				tech_engineers = 1
 				tech_recon = 1
+				tech_trucks = 1
+				motorised_infantry = 1
 			}
 			division_template = {
 				name = "Cavalry Division 12"
@@ -107,13 +111,15 @@ division_templates_category = {
 		}
 
 		complete_effect = {
-			# 初期野戦砲・支援装備・工兵・騎兵偵察の技術を習得
+			# 初期野戦砲・支援装備・工兵・騎兵偵察・初期トラック・軍用トラックの技術を習得
 			set_technology = {
 				popup = no
 				gw_artillery = 1
 				tech_support = 1
 				tech_engineers = 1
 				tech_recon = 1
+				tech_trucks = 1
+				motorised_infantry = 1
 			}
 			division_template = {
 				name = "Artillery Division 16"
@@ -159,13 +165,14 @@ division_templates_category = {
 		}
 
 		complete_effect = {
-			# 初期野戦砲・支援装備・工兵・偵察中隊・自動車化歩兵の技術を習得
+			# 初期野戦砲・支援装備・工兵・騎兵偵察・初期トラック・軍用トラックの技術を習得
 			set_technology = {
 				popup = no
 				gw_artillery = 1
 				tech_support = 1
 				tech_engineers = 1
 				tech_recon = 1
+				tech_trucks = 1
 				motorised_infantry = 1
 			}
 			division_template = {
