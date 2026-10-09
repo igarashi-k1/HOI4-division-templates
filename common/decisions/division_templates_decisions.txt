@@ -96,6 +96,58 @@ division_templates_category = {
 		}
 	}
 
+	# 師団テンプレート「Artillery Division 16」を追加（砲兵大隊 2列×4 + 歩兵大隊 2列×4 + 支援中隊：砲兵・工兵・騎兵偵察）
+	add_template_artillery_16 = {
+		icon = generic_army_support
+		cost = 0
+		fire_only_once = no
+
+		available = {
+			NOT = { has_template = "Artillery Division 16" }
+		}
+
+		complete_effect = {
+			# 初期野戦砲・支援装備・工兵・騎兵偵察の技術を習得
+			set_technology = {
+				popup = no
+				gw_artillery = 1
+				tech_support = 1
+				tech_engineers = 1
+				tech_recon = 1
+			}
+			division_template = {
+				name = "Artillery Division 16"
+				regiments = {
+					artillery_brigade = { x = 0 y = 0 }
+					artillery_brigade = { x = 0 y = 1 }
+					artillery_brigade = { x = 0 y = 2 }
+					artillery_brigade = { x = 0 y = 3 }
+					artillery_brigade = { x = 1 y = 0 }
+					artillery_brigade = { x = 1 y = 1 }
+					artillery_brigade = { x = 1 y = 2 }
+					artillery_brigade = { x = 1 y = 3 }
+					infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }
+					infantry = { x = 2 y = 2 }
+					infantry = { x = 2 y = 3 }
+					infantry = { x = 3 y = 0 }
+					infantry = { x = 3 y = 1 }
+					infantry = { x = 3 y = 2 }
+					infantry = { x = 3 y = 3 }
+				}
+				support = {
+					artillery = { x = 0 y = 0 }
+					engineer = { x = 0 y = 1 }
+					recon = { x = 0 y = 2 }
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
 	# 師団テンプレート「Infantry Division 12」の師団を首都に24個配置
 	deploy_infantry_12 = {
 		icon = generic_army_support
@@ -148,4 +200,29 @@ division_templates_category = {
 		}
 	}
 
+	# 師団テンプレート「Artillery Division 16」の師団を首都に24個配置
+	deploy_artillery_16 = {
+		icon = generic_army_support
+		cost = 0
+		fire_only_once = no
+
+		available = {
+			has_template = "Artillery Division 16"
+			capital_scope = { is_controlled_by = ROOT }
+		}
+
+		complete_effect = {
+			capital_scope = {
+				create_unit = {
+					division = "division_template = \"Artillery Division 16\" start_experience_factor = 1.0 start_equipment_factor = 1.0"
+					owner = ROOT
+					count = 24
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
 }

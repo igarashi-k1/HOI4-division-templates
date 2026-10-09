@@ -9,3 +9,7 @@
  deploy_infantry_12_desc:0 "「Infantry Division 12」の師団を首都に24個配置します。"
  deploy_cavalry_12:0 "騎兵師団を配置"
  deploy_cavalry_12_desc:0 "「Cavalry Division 12」の師団を首都に24個配置します。"
+ add_template_artillery_16:0 "砲兵師団テンプレートを追加"
+ add_template_artillery_16_desc:0 "砲兵大隊8（2列×4）・歩兵大隊8（2列×4）と支援中隊（砲兵・工兵・騎兵偵察）の師団テンプレート「Artillery Division 16」を追加し、初期野戦砲・支援装備・工兵・騎兵偵察の技術を習得します。"
+ deploy_artillery_16:0 "砲兵師団を配置"
+ deploy_artillery_16_desc:0 "「Artillery Division 16」の師団を首都に24個配置します。"
