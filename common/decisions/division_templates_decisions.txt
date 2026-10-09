@@ -1,6 +1,6 @@
 division_templates_category = {
 
-	# 師団テンプレート「Infantry Division 12」を追加（歩兵大隊 4列×3 + 支援中隊：砲兵・工兵・騎兵偵察）
+	# 師団テンプレート「Infantry Division 12」を追加（歩兵大隊 4個×3列 + 支援中隊：砲兵・工兵・騎兵偵察）
 	add_template_infantry_12 = {
 		icon = generic_army_support
 		cost = 0
@@ -25,15 +25,15 @@ division_templates_category = {
 					infantry = { x = 0 y = 0 }
 					infantry = { x = 0 y = 1 }
 					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
 					infantry = { x = 1 y = 0 }
 					infantry = { x = 1 y = 1 }
 					infantry = { x = 1 y = 2 }
+					infantry = { x = 1 y = 3 }
 					infantry = { x = 2 y = 0 }
 					infantry = { x = 2 y = 1 }
 					infantry = { x = 2 y = 2 }
-					infantry = { x = 3 y = 0 }
-					infantry = { x = 3 y = 1 }
-					infantry = { x = 3 y = 2 }
+					infantry = { x = 2 y = 3 }
 				}
 				support = {
 					artillery = { x = 0 y = 0 }
@@ -48,7 +48,7 @@ division_templates_category = {
 		}
 	}
 
-	# 師団テンプレート「Cavalry Division 12」を追加（騎兵大隊 4列×3 + 支援中隊：砲兵・工兵・騎兵偵察）
+	# 師団テンプレート「Cavalry Division 12」を追加（騎兵大隊 4個×3列 + 支援中隊：砲兵・工兵・騎兵偵察）
 	add_template_cavalry_12 = {
 		icon = generic_army_support
 		cost = 0
@@ -73,15 +73,15 @@ division_templates_category = {
 					cavalry = { x = 0 y = 0 }
 					cavalry = { x = 0 y = 1 }
 					cavalry = { x = 0 y = 2 }
+					cavalry = { x = 0 y = 3 }
 					cavalry = { x = 1 y = 0 }
 					cavalry = { x = 1 y = 1 }
 					cavalry = { x = 1 y = 2 }
+					cavalry = { x = 1 y = 3 }
 					cavalry = { x = 2 y = 0 }
 					cavalry = { x = 2 y = 1 }
 					cavalry = { x = 2 y = 2 }
-					cavalry = { x = 3 y = 0 }
-					cavalry = { x = 3 y = 1 }
-					cavalry = { x = 3 y = 2 }
+					cavalry = { x = 2 y = 3 }
 				}
 				support = {
 					artillery = { x = 0 y = 0 }
@@ -96,7 +96,7 @@ division_templates_category = {
 		}
 	}
 
-	# 師団テンプレート「Artillery Division 16」を追加（砲兵大隊 2列×4 + 歩兵大隊 2列×4 + 支援中隊：砲兵・工兵・騎兵偵察）
+	# 師団テンプレート「Artillery Division 16」を追加（砲兵大隊 4個×2列 + 歩兵大隊 4個×2列 + 支援中隊：砲兵・工兵・騎兵偵察）
 	add_template_artillery_16 = {
 		icon = generic_army_support
 		cost = 0
