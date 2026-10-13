@@ -52,4 +52,7 @@ descriptor.mod
 common/decisions/categories/division_templates_categories.txt
 common/decisions/division_templates_decisions.txt
 localisation/english/division_templates_l_english.yml   (UTF-8 BOM付き)
+localisation/japanese/division_templates_l_japanese.yml  (UTF-8 BOM付き)
 ```
+
+※ ローカライズは `l_japanese`（ゲームの言語設定が日本語の場合）と `l_english`（英語設定＋日本語化MODの場合）の両方に日本語で記述しています。
